@@ -13,7 +13,7 @@ services:
       - key: DATABASE_URL
         value: mongodb+srv://221fa04559_db_user:Dkq2TY37QjTfJPHs@cluster0.hfambek.mongodb.net/?appName=Cluster0
       - key: CORS_ORIGIN
-        sync: false
+        value: https://financial-payment-management.vercel.app/
       - key: AI_SERVICE_URL
         sync: false
       - key: JWT_SECRET
@@ -31,4 +31,4 @@ services:
       - key: GOOGLE_API_KEY
         value: AIzaSyAsombRXLvLeDtvARPBkal-NEj2okn74Bo
       - key: CORS_ORIGIN
-        sync: false
+        value: https://financial-payment-management.onrender.com
