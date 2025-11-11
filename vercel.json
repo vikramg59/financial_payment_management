@@ -24,7 +24,7 @@
     }
   ],
   "env": {
-    "MONGODB_URI": "@mongodb_uri",
-    "JWT_SECRET": "@jwt_secret"
+    "MONGODB_URI": "mongodb+srv://221fa04559_db_user:Dkq2TY37QjTfJPHs@cluster0.hfambek.mongodb.net/?appName=Cluster0:",
+    "JWT_SECRET": "f61741b73c1e40c8eb8449ac1805388c96a5f40a776ae55238ce2423005113388f254bb24d4298893ccdf965b892118269f3bc5b7c6d64b3387ca179453bc55d"
   }
 }
