@@ -1,34 +1,34 @@
 services:
   # Backend Service
   - type: web
-    name: parent-pay-pal-backend
+    name: parent_payment_management
     env: node
-    buildCommand: cd backend && npm install
-    startCommand: cd backend && node server.js
+    buildCommand: npm install
+    startCommand: node server.js
     envVars:
       - key: PORT
         value: 10000
       - key: NODE_ENV
         value: production
       - key: DATABASE_URL
-        sync: false
+        value: mongodb+srv://221fa04559_db_user:Dkq2TY37QjTfJPHs@cluster0.hfambek.mongodb.net/?appName=Cluster0
       - key: CORS_ORIGIN
         sync: false
       - key: AI_SERVICE_URL
         sync: false
       - key: JWT_SECRET
-        sync: false
+        value: f61741b73c1e40c8eb8449ac1805388c96a5f40a776ae55238ce2423005113388f254bb24d4298893ccdf965b892118269f3bc5b7c6d64b3387ca179453bc55d
         
   # AI Service
   - type: web
-    name: parent-pay-pal-ai
+    name: parent-payment_management
     env: python
-    buildCommand: cd ai && pip install -r requirements.txt
-    startCommand: cd ai && python python_service.py
+    buildCommand: pip install -r requirements.txt
+    startCommand: python python_service.py
     envVars:
       - key: PORT
         value: 10000
       - key: GOOGLE_API_KEY
-        sync: false
+        value: AIzaSyAsombRXLvLeDtvARPBkal-NEj2okn74Bo
       - key: CORS_ORIGIN
         sync: false
